@@ -1,0 +1,24 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+{% block title_block %}
+{{ 'Mainpage' }}
+{% endblock %}
+{% block body_block %}
+<body>
+<h1 align="center">Lets learn Django together</h1>
+<div>
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. <br />
+    Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus <br />
+    on writing your app without needing to reinvent the wheel.<br>
+<strong>{{ boldmessage }}</strong><br>
+</div>
+<div>
+<a href="{% url 'index' %}">Rango</a><br>
+<a href="{% url 'about' %}">About</a><br>
+<img src="/static/images/rango.jpg" alt="Picture of Rango" />
+</div>
+Ссылки на внешние ресурсы<br>
+<a href="https://pikabu.ru/">Pikabu</a><br>
+<a href="https://www.yaplakal.com/">ЯП</a><br>
+<a href="https://www.djangoproject.com/">Django</a>
+{% endblock %}
